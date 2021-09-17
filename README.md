@@ -1,7 +1,10 @@
 # comp551-p1
 
-## NOTES:
-* Done with preprocessing except for the one-hot-encoding
+## TODO:
+- [x] Preprocessing: data cleaning, feature clarification
+- [ ] One-hot encoding of categorical features
+- [ ] Feature engineering of the adult dataset
+- [ ] Write-up for dataset about the above
 
 ## *Datasets*
 ### Adult Indvidual Features
