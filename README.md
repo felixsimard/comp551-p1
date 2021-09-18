@@ -9,3 +9,6 @@
 ## *Datasets*
 ### Adult Indvidual Features
 https://archive.ics.uci.edu/ml/datasets/Adult
+
+### Mushrooms
+https://archive.ics.uci.edu/ml/datasets/Mushroom
