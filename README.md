@@ -2,9 +2,11 @@
 
 ## TODO:
 - [x] Preprocessing: data cleaning, feature clarification
-- [ ] One-hot encoding of categorical features
+- [x] One-hot encoding of categorical features
 - [ ] Feature engineering of the adult dataset
-- [ ] Write-up for dataset about the above
+- [ ] Model Preprocessing (KNN, Decision Tree)
+- [ ] Model Build - KNN
+- [ ] Model Build - Decision Tree
 
 ## *Datasets*
 ### Adult Indvidual Features
