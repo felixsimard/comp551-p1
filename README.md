@@ -3,7 +3,7 @@
 ## TODO:
 - [x] Preprocessing: data cleaning, feature clarification
 - [x] One-hot encoding of categorical features
-- [ ] Concatenation of encoded features with data set
+- [x] Concatenation of encoded features with data set
 - [ ] Feature engineering of the adult dataset
 - [ ] Model Preprocessing (KNN, Decision Tree)
 - [ ] Model Build - KNN
