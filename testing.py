@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 from train_test_split import train_valid_split_CV
 
 # Define our target prediction columns for this dataset (whether a kind of mushroom is edible or poisonous)
-target_columns = ['x0_EDIBLE', 'x0_POISONOUS']
+#target_columns = ['x0_EDIBLE', 'x0_POISONOUS']
   
 
 def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
 
-    GROWING_SAMPLE_SIZES = [0.02] #, 0.5, 0.75, 1.] 
+    GROWING_SAMPLE_SIZES = [0.2, 0.4] #, 0.5, 0.75, 1.] 
     print(GROWING_SAMPLE_SIZES)
     TEST_FRACTION = 0.2 
 
@@ -77,19 +77,20 @@ def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
             # Append metric
             training_validation_metric[hyperparams_values] = (mean_accuracy_cv, mean_score_cv)
 
-        print('training validation metrics', training_validation_metric)
+        import pprint
+        pprint.pprint(training_validation_metric)
         # PLOT K VALUES ACCURACIES
 
-        plt.figure()
-        hyp = list(hyperparams_values.keys())[0]
-        x = list(hyperparams_grid[hyp])
-        valid_scores = list(v[0] for v in training_validation_metric.values())
-        training_scores = list(v[1] for v in training_validation_metric.values())
-        plt.plot(x, training_scores, label='valid score')
-        plt.plot(x, valid_scores, label='training score')
-        plt.xticks(np.arange(min(x), max(x) + 1, 1))
-        plt.legend()
-        plt.show()
+#         plt.figure()
+#         hyp = list(hyperparams_grid.keys())[0]
+#         x = list(hyperparams_grid[hyp])
+#         valid_scores = list(v[0] for v in training_validation_metric.values())
+#         training_scores = list(v[1] for v in training_validation_metric.values())
+#         plt.plot(x, training_scores, label='training score')
+#         plt.plot(x, valid_scores, label='valid score')
+#         plt.xticks(np.arange(min(x), max(x) + 1, 1))
+#         plt.legend()
+#         plt.show()
 
         # Determine best K-value for this fraction size
         # best_accuracy = max()
@@ -102,6 +103,7 @@ def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
         
         # Save optimal K
         best_hyper_params = dict(zip(hyperparams_grid.keys(), values))
+        print('Best hps', best_hyper_params)
 
         # Re-train model with optimal K value and full training-validation set
         clf = model_cls(**best_hyper_params)
@@ -119,9 +121,9 @@ def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
         mean_squared_errors_arr.append(training_error*100)
 
         # Analyze/Show/Plot metrics
-        # print("Mean Squared Error:", training_error)
-        # print("Accuracy on training set:", training_score)
-        # print("Accuracy on test set:", test_accuracy_score)
+        print("Mean Squared Error:", training_error)
+        print("Accuracy on training set:", training_score)
+        print("Accuracy on test set:", test_accuracy_score)
         # print("Mean:", np.mean(accuracies))
         # print("Standard Deviation:", np.std(accuracies))
         # print("Variance:", np.var(accuracies))
@@ -142,6 +144,7 @@ def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
     # plt.plot(K_VALUES, best_accuracies)
 
     print("\n\n")
+    print('Mean squared errors', mean_squared_errors_arr)
 
     # Plot mean squared errors as fraction of dataset considered grows
     # print(GROWING_SAMPLE_SIZES.shape, mean_squared_errors_arr.shape)
