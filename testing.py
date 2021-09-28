@@ -4,15 +4,19 @@ import numpy as np
 from sklearn.metrics import accuracy_score, classification_report, mean_squared_error, confusion_matrix, ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 from train_test_split import train_valid_split_CV
+import pprint
+from sklearn.tree import export_graphviz
+from sklearn.externals.six import StringIO  
+from IPython.display import Image  
+import pydotplus
+import random
 
 # Define our target prediction columns for this dataset (whether a kind of mushroom is edible or poisonous)
 #target_columns = ['x0_EDIBLE', 'x0_POISONOUS']
   
-
 def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
 
-    GROWING_SAMPLE_SIZES = [0.2, 0.4] #, 0.5, 0.75, 1.] 
-    print(GROWING_SAMPLE_SIZES)
+    GROWING_SAMPLE_SIZES = [0.2, 0.4, 0.6, 0.8, 1.0] 
     TEST_FRACTION = 0.2 
 
     # Perform our custom cross validation
@@ -77,9 +81,10 @@ def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
             # Append metric
             training_validation_metric[hyperparams_values] = (mean_accuracy_cv, mean_score_cv)
 
-        import pprint
+        # For debugging
+        print("\n")
         pprint.pprint(training_validation_metric)
-        # PLOT K VALUES ACCURACIES
+        print("\n")
 
 #         plt.figure()
 #         hyp = list(hyperparams_grid.keys())[0]
@@ -92,16 +97,11 @@ def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
 #         plt.legend()
 #         plt.show()
 
-        # Determine best K-value for this fraction size
-        # best_accuracy = max()
-        # best_accuracies.append(best_accuracy)
-        # best_accuracy_index = accuracies.index(best_accuracy)
-        # best_split_df = temp_dfs[best_accuracy_index]
-
+        # Compute metrics for training-validation
         mean_metrics = {values: np.mean([m1, m2]) for values, (m1, m2) in training_validation_metric.items()}
         values, v = max(*mean_metrics.items(), key=lambda item: item[1])
         
-        # Save optimal K
+        # Save optimal hyper-parameter
         best_hyper_params = dict(zip(hyperparams_grid.keys(), values))
         print('Best hps', best_hyper_params)
 
@@ -124,17 +124,24 @@ def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
         print("Mean Squared Error:", training_error)
         print("Accuracy on training set:", training_score)
         print("Accuracy on test set:", test_accuracy_score)
-        # print("Mean:", np.mean(accuracies))
-        # print("Standard Deviation:", np.std(accuracies))
-        # print("Variance:", np.var(accuracies))
         # print("\n")
 
-        # Show a confusion matrix
-        # https://scikit-learn.org/stable/modules/generated/sklearn.metrics.ConfusionMatrixDisplay.html#sklearn.metrics.ConfusionMatrixDisplay
-        cm = confusion_matrix(y_test.argmax(axis=1), predicted.argmax(axis=1))
-        disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=clf.classes_)
-        disp.plot()
-        plt.show()
+        if str(model_cls) == "KNeighborsClassifier":
+            # Show a confusion matrix
+            # https://scikit-learn.org/stable/modules/generated/sklearn.metrics.ConfusionMatrixDisplay.html#sklearn.metrics.ConfusionMatrixDisplay
+            cm = confusion_matrix(y_test.argmax(axis=1), predicted.argmax(axis=1))
+            disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=clf.classes_)
+            disp.plot()
+            plt.show()
+
+        if str(model_cls) == "DecisionTreeClassifier":
+            dot_data = StringIO()
+            export_graphviz(clf, out_file=dot_data,  
+                            filled=True, rounded=True,
+                            special_characters=True,feature_names = X_df.columns)
+            graph = pydotplus.graph_from_dot_data(dot_data.getvalue())  
+            graph.write_png('dt_'+random.randint(1, 1000)+'.png')
+            Image(graph.create_png())
 
         print("-----------------------------")
 
@@ -147,9 +154,8 @@ def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
     print('Mean squared errors', mean_squared_errors_arr)
 
     # Plot mean squared errors as fraction of dataset considered grows
-    # print(GROWING_SAMPLE_SIZES.shape, mean_squared_errors_arr.shape)
-    # plt.plot(GROWING_SAMPLE_SIZES, mean_squared_errors_arr)
-    # plt.show()
+    plt.plot(GROWING_SAMPLE_SIZES, mean_squared_errors_arr)
+    plt.show()
 
 #model_cls = KNeighborsClassifier
 #hyperparams_grid = {'n_neighbors': [1,2,3,4,5,6,7], 'weights': ['uniform', 'distance']}
