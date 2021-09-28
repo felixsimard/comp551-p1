@@ -1,15 +1,20 @@
 # comp551-p1
 
 ## TODO:
+* Base Notebook
 - [x] Preprocessing: data cleaning, feature clarification
 - [x] One-hot encoding of categorical features
 - [x] Concatenation of encoded features with data set
 - [x] Feature engineering of the adult dataset
-- [ ] Model Preprocessing (KNN, Decision Tree)
+- [x] Model Preprocessing (KNN, Decision Tree)
 - [x] Model Build - KNN
 - [x] Model Build - Decision Tree
-- [ ] Model Optimization
-- [ ] Results
+* Final Notebook
+- [x] Data Cleaned Testing+Training superset
+- [x] One Hot Encoded Data Frame
+- [ ] Feature Engineering & Statistics
+- [ ] KNN & DT Preprocessing
+- [ ] Custom cross-val output
 
 ## *Datasets*
 ### Adult Indvidual Features
