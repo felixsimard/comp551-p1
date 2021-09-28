@@ -151,8 +151,7 @@ def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
     # plt.plot(GROWING_SAMPLE_SIZES, mean_squared_errors_arr)
     # plt.show()
 
-model_cls = KNeighborsClassifier
-hyperparams_grid = {'n_neighbors': [1,2,3,4,5,6,7], 'weights': ['uniform', 'distance']}
-target_columns = ['x0_EDIBLE', 'x0_POISONOUS']
-
-test(model_cls, hyperparams_grid, ohe_df, target_columns)
+#model_cls = KNeighborsClassifier
+#hyperparams_grid = {'n_neighbors': [1,2,3,4,5,6,7], 'weights': ['uniform', 'distance']}
+#target_columns = ['x0_EDIBLE', 'x0_POISONOUS']
+#test(model_cls, hyperparams_grid, ohe_df, target_columns)
