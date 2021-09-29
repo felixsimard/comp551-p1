@@ -1,0 +1,143 @@
+Using 10.0 % of total dataset.
+
+------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+
+
+{('entropy', 3): (0.8236391143887272, 0.8237130031989764),
+ ('entropy', 4): (0.8239125522724816, 0.8257618221369162),
+ ('entropy', 5): (0.8205811946779491, 0.8349111401151632),
+ ('gini', 3): (0.815453661284143, 0.8226262111324376),
+ ('gini', 4): (0.8177646207400178, 0.8292810031989764),
+ ('gini', 5): (0.8213474756935006, 0.8415021164427383)}
+
+
+Best hps {'criterion': 'gini', 'max_depth': 5}
+Mean Squared Error: 0.16888433981576254
+Accuracy on training set: 0.8395188123880215
+Accuracy on test set: 0.8311156601842374
+-----------------------------
+Using 20.0 % of total dataset.
+
+------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+
+
+{('entropy', 3): (0.8209627567065862, 0.8216982352561274),
+ ('entropy', 4): (0.8212194940128761, 0.8228500970235038),
+ ('entropy', 5): (0.8217297737451288, 0.8268811500716508),
+ ('gini', 3): (0.819553077202235, 0.8226899435053923),
+ ('gini', 4): (0.8201950023879683, 0.8242577950163931),
+ ('gini', 5): (0.8172519441665991, 0.8284490271703682)}
+
+
+Best hps {'criterion': 'entropy', 'max_depth': 5}
+Mean Squared Error: 0.1796315250767656
+Accuracy on training set: 0.825441515229076
+Accuracy on test set: 0.8203684749232344
+-----------------------------
+Using 40.0 % of total dataset.
+
+------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+
+
+{('entropy', 3): (0.8196192143314139, 0.8196826567414893),
+ ('entropy', 4): (0.8182745796545106, 0.8203704788662272),
+ ('entropy', 5): (0.8200654740882918, 0.8236657801391785),
+ ('gini', 3): (0.8180830095969289, 0.8196986106793016),
+ ('gini', 4): (0.8182747843889956, 0.8217461934875512),
+ ('gini', 5): (0.8192992962252081, 0.8253936035034842)}
+
+
+Best hps {'criterion': 'gini', 'max_depth': 5}
+Mean Squared Error: 0.17707267144319344
+Accuracy on training set: 0.8236498592270284
+Accuracy on test set: 0.8229273285568065
+-----------------------------
+Using 60.0 % of total dataset.
+
+------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+
+
+{('entropy', 3): (0.8249446002080244, 0.8254564012190052),
+ ('entropy', 4): (0.8252005274125704, 0.8268853449700682),
+ ('entropy', 5): (0.8278024069840313, 0.8295619355418637),
+ ('gini', 3): (0.8234092007508679, 0.8252004876612415),
+ ('gini', 4): (0.8270773147814543, 0.8285915344732981),
+ ('gini', 5): (0.8267357903946279, 0.8307136045444397)}
+
+
+Best hps {'criterion': 'gini', 'max_depth': 5}
+Mean Squared Error: 0.18085650912813514
+Accuracy on training set: 0.8300631291588466
+Accuracy on test set: 0.8191434908718649
+-----------------------------
+Using 80.0 % of total dataset.
+
+------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+
+
+{('entropy', 3): (0.8200779493962989, 0.8212777469417256),
+ ('entropy', 4): (0.8217096729654413, 0.8222774929266308),
+ ('entropy', 5): (0.828428019655051, 0.8301714553756827),
+ ('gini', 3): (0.8200777958699993, 0.8217736205741142),
+ ('gini', 4): (0.8236932378727273, 0.8241650322393455),
+ ('gini', 5): (0.8298355436514674, 0.8307792903006754)}
+
+
+Best hps {'criterion': 'gini', 'max_depth': 5}
+Mean Squared Error: 0.1676263595649392
+Accuracy on training set: 0.8329707594855716
+Accuracy on test set: 0.8323736404350608
+-----------------------------
+Using 100.0 % of total dataset.
+
+------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+
+
+{('entropy', 3): (0.8212275979544238, 0.8216753748523182),
+ ('entropy', 4): (0.8225584605350142, 0.8228590865644175),
+ ('entropy', 5): (0.8266021598453225, 0.8281314040105077),
+ ('gini', 3): (0.8205366190676674, 0.8215218123215389),
+ ('gini', 4): (0.8230701690176317, 0.8239852052396774),
+ ('gini', 5): (0.826243776242946, 0.8299549822203958)}
+
+
+Best hps {'criterion': 'gini', 'max_depth': 5}
+Mean Squared Error: 0.17668133892926605
+Accuracy on training set: 0.8259111384111384
+Accuracy on test set: 0.8233186610707339
+-----------------------------
+
+
+
+Mean squared errors [16.888433981576252, 17.96315250767656, 17.707267144319346, 18.085650912813513, 16.76263595649392, 17.668133892926605]
+

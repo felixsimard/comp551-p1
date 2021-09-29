@@ -14,7 +14,7 @@
 - [x] One Hot Encoded Data Frame
 - [ ] Feature Engineering & Statistics
 - [ ] KNN & DT Preprocessing
-- [ ] Custom cross-val output
+- [x] Custom cross-val output
 
 ## *Datasets*
 ### Adult Indvidual Features
