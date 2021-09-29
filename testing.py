@@ -16,7 +16,7 @@ import random
   
 def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
 
-    GROWING_SAMPLE_SIZES = [0.2, 0.4, 0.6, 0.8, 1.0] 
+    GROWING_SAMPLE_SIZES = [0.1, 0.2, 0.4, 0.6, 0.8, 1.0] 
     TEST_FRACTION = 0.2 
 
     # Perform our custom cross validation
