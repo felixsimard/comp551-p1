@@ -1,143 +1,454 @@
 Using 10.0 % of total dataset.
 
-------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 9} -------
 
 
-{('entropy', 3): (0.8236391143887272, 0.8237130031989764),
- ('entropy', 4): (0.8239125522724816, 0.8257618221369162),
- ('entropy', 5): (0.8205811946779491, 0.8349111401151632),
- ('gini', 3): (0.815453661284143, 0.8226262111324376),
- ('gini', 4): (0.8177646207400178, 0.8292810031989764),
- ('gini', 5): (0.8213474756935006, 0.8415021164427383)}
+{('entropy', 'best', 2): (0.8233899093234133, 0.8261451465131158),
+ ('entropy', 'best', 3): (0.8239089500967676, 0.8274253717210491),
+ ('entropy', 'best', 4): (0.8326052572117195, 0.8419506692258476),
+ ('entropy', 'best', 5): (0.8239076402146897, 0.8482217683941139),
+ ('entropy', 'best', 6): (0.8195545745994217, 0.8590357619961612),
+ ('entropy', 'best', 7): (0.8203224929675705, 0.8681212437619962),
+ ('entropy', 'best', 8): (0.8208346568600163, 0.8818149507357645),
+ ('entropy', 'best', 9): (0.8190374986491842, 0.896147920665387),
+ ('entropy', 'random', 2): (0.7936978298528675, 0.7989506333973129),
+ ('entropy', 'random', 3): (0.8049539740184889, 0.8127735073576454),
+ ('entropy', 'random', 4): (0.822628212895134, 0.8292814945617403),
+ ('entropy', 'random', 5): (0.8100847821174899, 0.8337604299424186),
+ ('entropy', 'random', 6): (0.8136682920120115, 0.8404792629558541),
+ ('entropy', 'random', 7): (0.8198119664277224, 0.8481564990403072),
+ ('entropy', 'random', 8): (0.8182725275157103, 0.860057980806142),
+ ('entropy', 'random', 9): (0.8136581404259081, 0.8696568752399232),
+ ('gini', 'best', 2): (0.8241568452800037, 0.8259531260396672),
+ ('gini', 'best', 3): (0.8231374295529046, 0.8285129417786308),
+ ('gini', 'best', 4): (0.8323557246758859, 0.8445741573896353),
+ ('gini', 'best', 5): (0.8349149067855166, 0.8548756801023671),
+ ('gini', 'best', 6): (0.8274954072259646, 0.8609544926423546),
+ ('gini', 'best', 7): (0.8297870459211911, 0.8756076673064619),
+ ('gini', 'best', 8): (0.8198122938982418, 0.8900045553422904),
+ ('gini', 'best', 9): (0.8136620700721418, 0.9015870607805503),
+ ('gini', 'random', 2): (0.7796310062186651, 0.7865365169545745),
+ ('gini', 'random', 3): (0.8085476354991142, 0.8177618016634678),
+ ('gini', 'random', 4): (0.8236512307979474, 0.8280643071017273),
+ ('gini', 'random', 5): (0.8157166201112744, 0.8347195700575816),
+ ('gini', 'random', 6): (0.8131633324709944, 0.8441267511196416),
+ ('gini', 'random', 7): (0.8136659997183753, 0.8504611541906589),
+ ('gini', 'random', 8): (0.8177623284463816, 0.8667140831733846),
+ ('gini', 'random', 9): (0.8062455177472648, 0.8723447728726809)}
 
 
-Best hps {'criterion': 'gini', 'max_depth': 5}
-Mean Squared Error: 0.16888433981576254
-Accuracy on training set: 0.8395188123880215
-Accuracy on test set: 0.8311156601842374
+Best hps {'criterion': 'gini', 'splitter': 'best', 'max_depth': 9}
+Mean Squared Error: 0.19140225179119755
+Accuracy on training set: 0.8971077553109803
+Accuracy on test set: 0.8085977482088025
 -----------------------------
 Using 20.0 % of total dataset.
 
-------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 9} -------
 
 
-{('entropy', 3): (0.8209627567065862, 0.8216982352561274),
- ('entropy', 4): (0.8212194940128761, 0.8228500970235038),
- ('entropy', 5): (0.8217297737451288, 0.8268811500716508),
- ('gini', 3): (0.819553077202235, 0.8226899435053923),
- ('gini', 4): (0.8201950023879683, 0.8242577950163931),
- ('gini', 5): (0.8172519441665991, 0.8284490271703682)}
+{('entropy', 'best', 2): (0.8162277802217247, 0.8162273153377992),
+ ('entropy', 'best', 3): (0.8167408452342626, 0.8189148443862546),
+ ('entropy', 'best', 4): (0.8146921077444718, 0.8189147471529316),
+ ('entropy', 'best', 5): (0.8194265107892746, 0.8249296363381603),
+ ('entropy', 'best', 6): (0.81801904312515, 0.8312642286895006),
+ ('entropy', 'best', 7): (0.8113660734838858, 0.8365754249633559),
+ ('entropy', 'best', 8): (0.8169959441403847, 0.8485090498124267),
+ ('entropy', 'best', 9): (0.8135395751464525, 0.8572434015164101),
+ ('entropy', 'random', 2): (0.792551668997291, 0.7953670061542553),
+ ('entropy', 'random', 3): (0.8163550839147605, 0.8164191055086978),
+ ('entropy', 'random', 4): (0.814946551290527, 0.8173790286964195),
+ ('entropy', 'random', 5): (0.8196830842555478, 0.8233939383518214),
+ ('entropy', 'random', 6): (0.8160987562085126, 0.8292167149609229),
+ ('entropy', 'random', 7): (0.8175072888327464, 0.8352315325005453),
+ ('entropy', 'random', 8): (0.8148208859976588, 0.8407026366504329),
+ ('entropy', 'random', 9): (0.810598974525335, 0.8455978124754038),
+ ('gini', 'best', 2): (0.8146926811845306, 0.8164193409156904),
+ ('gini', 'best', 3): (0.8168679031672733, 0.8199066498688424),
+ ('gini', 'best', 4): (0.8185303058975034, 0.8222101124088859),
+ ('gini', 'best', 5): (0.8173789201796013, 0.8274250067525983),
+ ('gini', 'best', 6): (0.8158433296223571, 0.8338879215026171),
+ ('gini', 'best', 7): (0.8076554247839155, 0.8363833328574017),
+ ('gini', 'best', 8): (0.8129009267610549, 0.8541081232505039),
+ ('gini', 'best', 9): (0.8075246804505273, 0.8643142957651408),
+ ('gini', 'random', 2): (0.7734851147248758, 0.7753387378684797),
+ ('gini', 'random', 3): (0.8139261556660383, 0.8174752282756959),
+ ('gini', 'random', 4): (0.812130059482118, 0.8207705218860439),
+ ('gini', 'random', 5): (0.8196825927354974, 0.8280330374267436),
+ ('gini', 'random', 6): (0.8190409133097896, 0.8337277423967893),
+ ('gini', 'random', 7): (0.8135391655464105, 0.8351674148003243),
+ ('gini', 'random', 8): (0.8141793704119676, 0.8477732647869111),
+ ('gini', 'random', 9): (0.8088054997816831, 0.8508446095841556)}
 
 
-Best hps {'criterion': 'entropy', 'max_depth': 5}
-Mean Squared Error: 0.1796315250767656
-Accuracy on training set: 0.825441515229076
-Accuracy on test set: 0.8203684749232344
+Best hps {'criterion': 'gini', 'splitter': 'best', 'max_depth': 9}
+Mean Squared Error: 0.20394063459570114
+Accuracy on training set: 0.8598669055541336
+Accuracy on test set: 0.7958034800409417
 -----------------------------
 Using 40.0 % of total dataset.
 
-------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 9} -------
 
 
-{('entropy', 3): (0.8196192143314139, 0.8196826567414893),
- ('entropy', 4): (0.8182745796545106, 0.8203704788662272),
- ('entropy', 5): (0.8200654740882918, 0.8236657801391785),
- ('gini', 3): (0.8180830095969289, 0.8196986106793016),
- ('gini', 4): (0.8182747843889956, 0.8217461934875512),
- ('gini', 5): (0.8192992962252081, 0.8253936035034842)}
+{('entropy', 'best', 2): (0.8222418426103648, 0.8228339925661483),
+ ('entropy', 'best', 3): (0.8219866615483046, 0.8250896073536176),
+ ('entropy', 'best', 4): (0.8219219449776073, 0.8251535075510847),
+ ('entropy', 'best', 5): (0.8249289008317339, 0.8297446603536637),
+ ('entropy', 'best', 6): (0.8276166142034549, 0.8361274381974274),
+ ('entropy', 'best', 7): (0.8263375559820858, 0.8409105027079535),
+ ('entropy', 'best', 8): (0.821411419065899, 0.8454535646687157),
+ ('entropy', 'best', 9): (0.8280006756238004, 0.8545878689962272),
+ ('entropy', 'random', 2): (0.8020851183621241, 0.8009021440677305),
+ ('entropy', 'random', 3): (0.8143063749200257, 0.8155555243929106),
+ ('entropy', 'random', 4): (0.8242255150351887, 0.825953407720301),
+ ('entropy', 'random', 5): (0.8250577402431223, 0.8290407972859191),
+ ('entropy', 'random', 6): (0.8260176378758798, 0.8315843455289496),
+ ('entropy', 'random', 7): (0.8268495355086373, 0.8351196403952477),
+ ('entropy', 'random', 8): (0.8278733921944978, 0.8414704822146476),
+ ('entropy', 'random', 9): (0.8265936788227768, 0.8453096951820349),
+ ('gini', 'best', 2): (0.8225625796545106, 0.822754057823115),
+ ('gini', 'best', 3): (0.8234578835572617, 0.8245617033354964),
+ ('gini', 'best', 4): (0.8246111938579654, 0.8280650084389283),
+ ('gini', 'best', 5): (0.8240976788227767, 0.8317123109778561),
+ ('gini', 'best', 6): (0.8314564504158669, 0.8393428661427768),
+ ('gini', 'best', 7): (0.8276176583493282, 0.8440619933506792),
+ ('gini', 'best', 8): (0.8258253512476008, 0.8527962541909474),
+ ('gini', 'best', 9): (0.8251851465131157, 0.8608906494020383),
+ ('gini', 'random', 2): (0.7892867357645553, 0.7938320929996477),
+ ('gini', 'random', 3): (0.8176335150351888, 0.8192828461210903),
+ ('gini', 'random', 4): (0.8231375969289827, 0.8248495165191709),
+ ('gini', 'random', 5): (0.8242904158669226, 0.827553105699681),
+ ('gini', 'random', 6): (0.8269779245041586, 0.8324482431367327),
+ ('gini', 'random', 7): (0.8285129008317339, 0.8403346524301772),
+ ('gini', 'random', 8): (0.8276174331413946, 0.8458056721322093),
+ ('gini', 'random', 9): (0.8248654331413947, 0.8502847494492858)}
 
 
-Best hps {'criterion': 'gini', 'max_depth': 5}
-Mean Squared Error: 0.17707267144319344
-Accuracy on training set: 0.8236498592270284
-Accuracy on test set: 0.8229273285568065
+Best hps {'criterion': 'gini', 'splitter': 'best', 'max_depth': 9}
+Mean Squared Error: 0.1796315250767656
+Accuracy on training set: 0.8572434092654211
+Accuracy on test set: 0.8193449334698055
 -----------------------------
 Using 60.0 % of total dataset.
 
-------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 9} -------
 
 
-{('entropy', 3): (0.8249446002080244, 0.8254564012190052),
- ('entropy', 4): (0.8252005274125704, 0.8268853449700682),
- ('entropy', 5): (0.8278024069840313, 0.8295619355418637),
- ('gini', 3): (0.8234092007508679, 0.8252004876612415),
- ('gini', 4): (0.8270773147814543, 0.8285915344732981),
- ('gini', 5): (0.8267357903946279, 0.8307136045444397)}
+{('entropy', 'best', 2): (0.8196977604254239, 0.820455110314224),
+ ('entropy', 'best', 3): (0.8199537149249896, 0.8214681456381662),
+ ('entropy', 'best', 4): (0.82131893903166, 0.8227371610408405),
+ ('entropy', 'best', 5): (0.8237078810548543, 0.8259682738189558),
+ ('entropy', 'best', 6): (0.8234514534416109, 0.8283142938381285),
+ ('entropy', 'best', 7): (0.8287838540131321, 0.8356082492596416),
+ ('entropy', 'best', 8): (0.827546761828024, 0.8410041033203685),
+ ('entropy', 'best', 9): (0.8260106890937108, 0.8477861889847075),
+ ('entropy', 'random', 2): (0.7822899448058305, 0.7838998816211036),
+ ('entropy', 'random', 3): (0.8179489230113031, 0.8183544207646852),
+ ('entropy', 'random', 4): (0.8241762635956494, 0.8231743539037204),
+ ('entropy', 'random', 5): (0.8191433712770502, 0.8224705279416782),
+ ('entropy', 'random', 6): (0.8265227618629616, 0.8286341630431217),
+ ('entropy', 'random', 7): (0.8274185571197423, 0.8328569829306625),
+ ('entropy', 'random', 8): (0.8227266068942125, 0.8330275961385771),
+ ('entropy', 'random', 9): (0.8246887912818979, 0.8395538006528038),
+ ('gini', 'best', 2): (0.8196980151789426, 0.8203058406718187),
+ ('gini', 'best', 3): (0.8205509754512231, 0.8222999619238524),
+ ('gini', 'best', 4): (0.8209773964481537, 0.8236755490353636),
+ ('gini', 'best', 5): (0.8233662565862883, 0.8260535758744707),
+ ('gini', 'best', 6): (0.8240492598682415, 0.8336461405130949),
+ ('gini', 'best', 7): (0.8258402862847255, 0.8372184575333833),
+ ('gini', 'best', 8): (0.8258829393024267, 0.845280212189382),
+ ('gini', 'best', 9): (0.8217451052750719, 0.8498762931718955),
+ ('gini', 'random', 2): (0.7890704098692969, 0.7903730956453838),
+ ('gini', 'random', 3): (0.8193996715135343, 0.8189408400597689),
+ ('gini', 'random', 4): (0.8205504750425255, 0.8208070625255601),
+ ('gini', 'random', 5): (0.8235792123312349, 0.8270132556959717),
+ ('gini', 'random', 6): (0.8246457288388991, 0.8292846505593816),
+ ('gini', 'random', 7): (0.8246885638233991, 0.8328037036146301),
+ ('gini', 'random', 8): (0.8230677127574012, 0.8371331623005316),
+ ('gini', 'random', 9): (0.8232384067132648, 0.8441498605987718)}
 
 
-Best hps {'criterion': 'gini', 'max_depth': 5}
-Mean Squared Error: 0.18085650912813514
-Accuracy on training set: 0.8300631291588466
-Accuracy on test set: 0.8191434908718649
+Best hps {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 9}
+Mean Squared Error: 0.16814536768469546
+Accuracy on training set: 0.8449923221293295
+Accuracy on test set: 0.8315987032929534
 -----------------------------
 Using 80.0 % of total dataset.
 
-------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 9} -------
 
 
-{('entropy', 3): (0.8200779493962989, 0.8212777469417256),
- ('entropy', 4): (0.8217096729654413, 0.8222774929266308),
- ('entropy', 5): (0.828428019655051, 0.8301714553756827),
- ('gini', 3): (0.8200777958699993, 0.8217736205741142),
- ('gini', 4): (0.8236932378727273, 0.8241650322393455),
- ('gini', 5): (0.8298355436514674, 0.8307792903006754)}
+{('entropy', 'best', 2): (0.8220611765457259, 0.8227093598468107),
+ ('entropy', 'best', 3): (0.823757171341389, 0.8244369417081492),
+ ('entropy', 'best', 4): (0.82442884890177, 0.8252607302427528),
+ ('entropy', 'best', 5): (0.8259326441230697, 0.8277400894493523),
+ ('entropy', 'best', 6): (0.8290675846311167, 0.8344263894040566),
+ ('entropy', 'best', 7): (0.8292594925055112, 0.8370017147018398),
+ ('entropy', 'best', 8): (0.8304114208009509, 0.8423443636853424),
+ ('entropy', 'best', 9): (0.829483507846678, 0.847854955727169),
+ ('entropy', 'random', 2): (0.7792882172761507, 0.7805682155937071),
+ ('entropy', 'random', 3): (0.8211656729932807, 0.8213177392630311),
+ ('entropy', 'random', 4): (0.8180622974924141, 0.8197981122911754),
+ ('entropy', 'random', 5): (0.823757253222082, 0.8261804983015537),
+ ('entropy', 'random', 6): (0.8271166389449345, 0.8298835772516527),
+ ('entropy', 'random', 7): (0.8264125008072926, 0.8311551792931395),
+ ('entropy', 'random', 8): (0.827020214193752, 0.8353221513876298),
+ ('entropy', 'random', 9): (0.8264765417443638, 0.839633023684345),
+ ('gini', 'best', 2): (0.8218378316027337, 0.8225734366160248),
+ ('gini', 'best', 3): (0.8243011099030297, 0.8246528972367623),
+ ('gini', 'best', 4): (0.8255168539636346, 0.8267003725719976),
+ ('gini', 'best', 5): (0.8264443882197018, 0.8284999179674625),
+ ('gini', 'best', 6): (0.8294194208517167, 0.8345543247890591),
+ ('gini', 'best', 7): (0.8309552109538354, 0.839449098537781),
+ ('gini', 'best', 8): (0.8283001936580743, 0.8455035581319323),
+ ('gini', 'best', 9): (0.8266362193309467, 0.8524137985825299),
+ ('gini', 'random', 2): (0.7863590961722517, 0.7865985408593311),
+ ('gini', 'random', 3): (0.8166231061379507, 0.8157111644986704),
+ ('gini', 'random', 4): (0.8223173249413811, 0.8239650952600105),
+ ('gini', 'random', 5): (0.8258047311278564, 0.8285078965380694),
+ ('gini', 'random', 6): (0.8265082091024105, 0.8305713821069076),
+ ('gini', 'random', 7): (0.8289717483974158, 0.8344503644554188),
+ ('gini', 'random', 8): (0.8275964956291574, 0.8379455041878844),
+ ('gini', 'random', 9): (0.8292598353809135, 0.8422084110298593)}
 
 
-Best hps {'criterion': 'gini', 'max_depth': 5}
-Mean Squared Error: 0.1676263595649392
-Accuracy on training set: 0.8329707594855716
-Accuracy on test set: 0.8323736404350608
+Best hps {'criterion': 'gini', 'splitter': 'best', 'max_depth': 9}
+Mean Squared Error: 0.16852207293666027
+Accuracy on training set: 0.8503743041781304
+Accuracy on test set: 0.8310940499040307
 -----------------------------
 Using 100.0 % of total dataset.
 
-------- current hp = {'criterion': 'gini', 'max_depth': 3} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 4} -------
-------- current hp = {'criterion': 'gini', 'max_depth': 5} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 3} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 4} -------
-------- current hp = {'criterion': 'entropy', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'gini', 'splitter': 'random', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'best', 'max_depth': 9} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 2} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 3} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 4} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 5} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 6} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 7} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 8} -------
+------- current hp = {'criterion': 'entropy', 'splitter': 'random', 'max_depth': 9} -------
 
 
-{('entropy', 3): (0.8212275979544238, 0.8216753748523182),
- ('entropy', 4): (0.8225584605350142, 0.8228590865644175),
- ('entropy', 5): (0.8266021598453225, 0.8281314040105077),
- ('gini', 3): (0.8205366190676674, 0.8215218123215389),
- ('gini', 4): (0.8230701690176317, 0.8239852052396774),
- ('gini', 5): (0.826243776242946, 0.8299549822203958)}
+{('entropy', 'best', 2): (0.8196151861555314, 0.8201781368508165),
+ ('entropy', 'best', 3): (0.820920158889314, 0.8211442841934893),
+ ('entropy', 'best', 4): (0.8216114423625033, 0.8229806554427848),
+ ('entropy', 'best', 5): (0.8234544064404637, 0.8243115446292568),
+ ('entropy', 'best', 6): (0.8261925500451067, 0.8301724718736903),
+ ('entropy', 'best', 7): (0.8269859059997142, 0.8345490511846506),
+ ('entropy', 'best', 8): (0.828419391282376, 0.8398789342375483),
+ ('entropy', 'best', 9): (0.8284960946615334, 0.84444743861667),
+ ('entropy', 'random', 2): (0.7931256774387098, 0.7936309463557762),
+ ('entropy', 'random', 3): (0.8201783042428726, 0.8208627935203541),
+ ('entropy', 'random', 4): (0.8159547581067891, 0.8174524761850364),
+ ('entropy', 'random', 5): (0.8228144736197855, 0.8230574183873693),
+ ('entropy', 'random', 6): (0.8258597811792114, 0.8286688391948005),
+ ('entropy', 'random', 7): (0.8276770650182318, 0.831420175598754),
+ ('entropy', 'random', 8): (0.8273446596909823, 0.8350673273103902),
+ ('entropy', 'random', 9): (0.8262951399959487, 0.8380682086352718),
+ ('gini', 'best', 2): (0.8196663075494367, 0.8202869047064087),
+ ('gini', 'best', 3): (0.8204341895978494, 0.8213938512222043),
+ ('gini', 'best', 4): (0.8216370374482469, 0.8232877827560625),
+ ('gini', 'best', 5): (0.8229678934785916, 0.8265509858698428),
+ ('gini', 'best', 6): (0.8285726375596665, 0.831797701884488),
+ ('gini', 'best', 7): (0.8296477359648291, 0.8371915933264885),
+ ('gini', 'best', 8): (0.8305691721520881, 0.8418752579868715),
+ ('gini', 'best', 9): (0.8285217847258419, 0.847371521788269),
+ ('gini', 'random', 2): (0.8002661135639053, 0.8013155856850303),
+ ('gini', 'random', 3): (0.8173883318177702, 0.8183738006036829),
+ ('gini', 'random', 4): (0.8229423475196921, 0.8237932856984624),
+ ('gini', 'random', 5): (0.8227117297381653, 0.824663471735265),
+ ('gini', 'random', 6): (0.8250919220566594, 0.8297886119116843),
+ ('gini', 'random', 7): (0.8269606187755265, 0.8330198111379656),
+ ('gini', 'random', 8): (0.8261415334551352, 0.8357391604399623),
+ ('gini', 'random', 9): (0.8247336498084626, 0.8386120427956891)}
 
 
-Best hps {'criterion': 'gini', 'max_depth': 5}
-Mean Squared Error: 0.17668133892926605
-Accuracy on training set: 0.8259111384111384
-Accuracy on test set: 0.8233186610707339
+Best hps {'criterion': 'gini', 'splitter': 'best', 'max_depth': 9}
+Mean Squared Error: 0.1672637936329205
+Accuracy on training set: 0.8450296887796888
+Accuracy on test set: 0.8318149247620023
 -----------------------------
 
 
 
-Mean squared errors [16.888433981576252, 17.96315250767656, 17.707267144319346, 18.085650912813513, 16.76263595649392, 17.668133892926605]
-
+Mean squared errors [19.140225179119756, 20.394063459570113, 17.96315250767656, 16.814536768469544, 16.852207293666027, 16.72637936329205]

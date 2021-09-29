@@ -1,130 +1,286 @@
 Using 10.0 % of total dataset.
 
-------- current hp = {'n_neighbors': 1} -------
-------- current hp = {'n_neighbors': 2} -------
-------- current hp = {'n_neighbors': 3} -------
-------- current hp = {'n_neighbors': 4} -------
-------- current hp = {'n_neighbors': 5} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'distance'} -------
 
 
-{(1,): (0.6393599916167547, 1.0),
- (2,): (0.4422829934735125, 0.636869609724888),
- (3,): (0.6695701294490963, 0.8198743134996802),
- (4,): (0.5707634320220323, 0.6709742188099808),
- (5,): (0.7054009712775607, 0.7798179500959692)}
+{(1, 'distance'): (0.6490825913397147, 1.0),
+ (1, 'uniform'): (0.647037865416166, 1.0),
+ (2, 'distance'): (0.6572798333829997, 1.0),
+ (2, 'uniform'): (0.46532611151681075, 0.6511396852207294),
+ (3, 'distance'): (0.6693002937410559, 1.0),
+ (3, 'uniform'): (0.6941346755258359, 0.8208984977607166),
+ (4, 'distance'): (0.6795491385887985, 1.0),
+ (4, 'uniform'): (0.5827943714367114, 0.6851799462571977),
+ (5, 'distance'): (0.691065621817396, 1.0),
+ (5, 'uniform'): (0.6977204777139938, 0.7842333973128599),
+ (6, 'distance'): (0.6861925330172152, 1.0),
+ (6, 'uniform'): (0.6275838242662205, 0.7029045271912987),
+ (7, 'distance'): (0.6792950214656925, 1.0),
+ (7, 'uniform'): (0.7207577012879416, 0.769004202175304),
+ (8, 'distance'): (0.6874860415691078, 1.0),
+ (8, 'uniform'): (0.6828739467729419, 0.7167259065898913),
+ (9, 'distance'): (0.6982329690769589, 1.0),
+ (9, 'uniform'): (0.7276670017781649, 0.7656127959053103)}
 
 
-Best hps {'n_neighbors': 1}
-Mean Squared Error: 0.3725690890481064
+Best hps {'n_neighbors': 9, 'weights': 'distance'}
+Mean Squared Error: 0.3029682702149437
 Accuracy on training set: 1.0
-Accuracy on test set: 0.6274309109518935
+Accuracy on test set: 0.6970317297850563
 -----------------------------
 Using 20.0 % of total dataset.
 
-------- current hp = {'n_neighbors': 1} -------
-------- current hp = {'n_neighbors': 2} -------
-------- current hp = {'n_neighbors': 3} -------
-------- current hp = {'n_neighbors': 4} -------
-------- current hp = {'n_neighbors': 5} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'distance'} -------
 
 
-{(1,): (0.657409951478779, 1.0),
- (2,): (0.4729973629949299, 0.6589455220114238),
- (3,): (0.6886371213964412, 0.8264334776173496),
- (4,): (0.5843379593562071, 0.6915795635206363),
- (5,): (0.7184530553295929, 0.7919438916644739)}
+{(1, 'distance'): (0.645508612660082, 1.0),
+ (1, 'uniform'): (0.6521620738213963, 1.0),
+ (2, 'distance'): (0.6498579916654583, 1.0),
+ (2, 'uniform'): (0.44855349745187817, 0.6500190423786832),
+ (3, 'distance'): (0.6721275363458596, 1.0),
+ (3, 'uniform'): (0.6878658445174624, 0.8210261534098242),
+ (4, 'distance'): (0.6748144307009978, 1.0),
+ (4, 'uniform'): (0.5889431745477811, 0.6883482392017534),
+ (5, 'distance'): (0.6878687117177561, 1.0),
+ (5, 'uniform'): (0.7042501738752177, 0.7869848028410144),
+ (6, 'distance'): (0.6901727938736941, 1.0),
+ (6, 'uniform'): (0.6403891855758526, 0.7117354684542858),
+ (7, 'distance'): (0.6988760574849083, 1.0),
+ (7, 'uniform'): (0.7256204007035291, 0.7741553725044428),
+ (8, 'distance'): (0.6979772311528685, 1.0),
+ (8, 'uniform'): (0.6824922196472032, 0.723189026799858),
+ (9, 'distance'): (0.7066811501241498, 1.0),
+ (9, 'uniform'): (0.7315056979461835, 0.7657088774945081)}
 
 
-Best hps {'n_neighbors': 1}
-Mean Squared Error: 0.3474923234390993
+Best hps {'n_neighbors': 9, 'weights': 'distance'}
+Mean Squared Error: 0.2932446264073695
 Accuracy on training set: 1.0
-Accuracy on test set: 0.6525076765609007
+Accuracy on test set: 0.7067553735926305
 -----------------------------
 Using 40.0 % of total dataset.
 
-------- current hp = {'n_neighbors': 1} -------
-------- current hp = {'n_neighbors': 2} -------
-------- current hp = {'n_neighbors': 3} -------
-------- current hp = {'n_neighbors': 4} -------
-------- current hp = {'n_neighbors': 5} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'distance'} -------
 
 
-{(1,): (0.6732148125399873, 0.9998880204761095),
- (2,): (0.49174580166346776, 0.6732625846328636),
- (3,): (0.6997052437619962, 0.8332960102373382),
- (4,): (0.6021254305822137, 0.7030169754939506),
- (5,): (0.7211413538067819, 0.7962311217760145)}
+{(1, 'distance'): (0.6680307715930902, 0.9999360127973382),
+ (1, 'uniform'): (0.6691189763275751, 0.9999520102377477),
+ (2, 'distance'): (0.6653442661548304, 0.9999040179165192),
+ (2, 'uniform'): (0.48285074344209855, 0.6675199129620506),
+ (3, 'distance'): (0.6913232706333974, 0.9999040204754955),
+ (3, 'uniform'): (0.7009220831733846, 0.8329920985336899),
+ (4, 'distance'): (0.701626021753039, 0.9999040204754955),
+ (4, 'uniform'): (0.5983491234804863, 0.7024571968668969),
+ (5, 'distance'): (0.7052716468330135, 0.9999040179165192),
+ (5, 'uniform'): (0.7179421113243762, 0.7973509093379899),
+ (6, 'distance'): (0.7087919539347409, 0.9999040204754955),
+ (6, 'uniform'): (0.6540180063979527, 0.7179741178226648),
+ (7, 'distance'): (0.7141665617402432, 0.9998720230357),
+ (7, 'uniform'): (0.7306113269353807, 0.7797702302847093),
+ (8, 'distance'): (0.7178796877799104, 0.9999040153575429),
+ (8, 'uniform'): (0.6830683557261676, 0.7290600497441964),
+ (9, 'distance'): (0.7237657018554062, 0.9999040179165192),
+ (9, 'uniform'): (0.7410415866922585, 0.771419884983483)}
 
 
-Best hps {'n_neighbors': 1}
-Mean Squared Error: 0.31960081883316277
+Best hps {'n_neighbors': 9, 'weights': 'distance'}
+Mean Squared Error: 0.27763561924257935
 Accuracy on training set: 0.9998720245712823
-Accuracy on test set: 0.6803991811668373
+Accuracy on test set: 0.7223643807574207
 -----------------------------
 Using 60.0 % of total dataset.
 
-------- current hp = {'n_neighbors': 1} -------
-------- current hp = {'n_neighbors': 2} -------
-------- current hp = {'n_neighbors': 3} -------
-------- current hp = {'n_neighbors': 4} -------
-------- current hp = {'n_neighbors': 5} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'distance'} -------
 
 
-{(1,): (0.6753968513920825, 0.9999680090996137),
- (2,): (0.48895249538350233, 0.6760152012353113),
- (3,): (0.7037194468646029, 0.8364506855895512),
- (4,): (0.5942249742880913, 0.7031009994690262),
- (5,): (0.71732628721494, 0.7985412059592101)}
+{(1, 'distance'): (0.68085656503457, 0.9999680085310583),
+ (1, 'uniform'): (0.6775719278363347, 0.9999680085310583),
+ (2, 'distance'): (0.679747395509205, 0.9999360181992273),
+ (2, 'uniform'): (0.4959478541383254, 0.6808031991923785),
+ (3, 'distance'): (0.7025246346652574, 0.9999360170621168),
+ (3, 'uniform'): (0.7054688028841009, 0.8397458108704245),
+ (4, 'distance'): (0.709349863561294, 0.9999146905532663),
+ (4, 'uniform'): (0.6066800739804219, 0.7091899707529474),
+ (5, 'distance'): (0.717454428234842, 0.9999360181992273),
+ (5, 'uniform'): (0.7244920123853882, 0.802102865979181),
+ (6, 'distance'): (0.72346914971282, 0.9999360181992273),
+ (6, 'uniform'): (0.6609794399353073, 0.7252068543433559),
+ (7, 'distance'): (0.7276911979747822, 0.9999146905532663),
+ (7, 'uniform'): (0.7346442767438425, 0.7856061257056409),
+ (8, 'distance'): (0.7326819376843778, 0.9999360181992273),
+ (8, 'uniform'): (0.6935675555380868, 0.7349747916799212),
+ (9, 'distance'): (0.7331511845674686, 0.9999360170621168),
+ (9, 'uniform'): (0.7411704432056145, 0.7763286963669714)}
 
 
-Best hps {'n_neighbors': 1}
-Mean Squared Error: 0.31206278792015013
-Accuracy on training set: 0.9999573451629414
-Accuracy on test set: 0.6879372120798498
+Best hps {'n_neighbors': 9, 'weights': 'distance'}
+Mean Squared Error: 0.27367343456747995
+Accuracy on training set: 0.999914690325883
+Accuracy on test set: 0.72632656543252
 -----------------------------
 Using 80.0 % of total dataset.
 
-------- current hp = {'n_neighbors': 1} -------
-------- current hp = {'n_neighbors': 2} -------
-------- current hp = {'n_neighbors': 3} -------
-------- current hp = {'n_neighbors': 4} -------
-------- current hp = {'n_neighbors': 5} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'distance'} -------
 
 
-{(1,): (0.6874077677961802, 0.9999280191948557),
- (2,): (0.5047028227243078, 0.6874720030802797),
- (3,): (0.708458679880573, 0.8432241125568101),
- (4,): (0.6081642573784484, 0.7091864761750577),
- (5,): (0.7230467795658134, 0.803010440448665)}
+{(1, 'distance'): (0.6857124996916679, 1.0),
+ (1, 'uniform'): (0.6884319468577926, 1.0),
+ (2, 'distance'): (0.6874401260225748, 1.0),
+ (2, 'uniform'): (0.5025590735936505, 0.6859764074505111),
+ (3, 'distance'): (0.70881043422048, 1.0),
+ (3, 'uniform'): (0.7088744188645749, 0.841888452309895),
+ (4, 'distance'): (0.7134812518288821, 1.0),
+ (4, 'uniform'): (0.6072364263048685, 0.7110579083445694),
+ (5, 'distance'): (0.7175444123438011, 1.0),
+ (5, 'uniform'): (0.7216388666361047, 0.8047619804101815),
+ (6, 'distance'): (0.725350390514613, 1.0),
+ (6, 'uniform'): (0.6542644334935841, 0.7227269794834156),
+ (7, 'distance'): (0.7277817097568932, 1.0),
+ (7, 'uniform'): (0.7306611569148296, 0.787302472047809),
+ (8, 'distance'): (0.732516670653233, 1.0),
+ (8, 'uniform'): (0.6865120186016559, 0.7314047423036034),
+ (9, 'distance'): (0.7345958977977471, 1.0),
+ (9, 'uniform'): (0.7375392016611955, 0.7766731606440287)}
 
 
-Best hps {'n_neighbors': 1}
-Mean Squared Error: 0.30761356365962894
-Accuracy on training set: 0.9999040245697102
-Accuracy on test set: 0.6923864363403711
+Best hps {'n_neighbors': 9, 'weights': 'distance'}
+Mean Squared Error: 0.26999360204734485
+Accuracy on training set: 1.0
+Accuracy on test set: 0.7300063979526551
 -----------------------------
 Using 100.0 % of total dataset.
 
-------- current hp = {'n_neighbors': 1} -------
-------- current hp = {'n_neighbors': 2} -------
-------- current hp = {'n_neighbors': 3} -------
-------- current hp = {'n_neighbors': 4} -------
-------- current hp = {'n_neighbors': 5} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 6, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 7, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 8, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 9, 'weights': 'distance'} -------
 
 
-{(1,): (0.6915947539735837, 0.999897624570077),
- (2,): (0.5104421858104972, 0.6921388828046415),
- (3,): (0.7121468152458938, 0.8442874550019793),
- (4,): (0.607109833376483, 0.7118780732293137),
- (5,): (0.726633014778501, 0.8053017594914198)}
+{(1, 'distance'): (0.6937193687986571, 0.9999616094184806),
+ (1, 'uniform'): (0.6920812603852102, 0.9999616092137789),
+ (2, 'distance'): (0.6901360043925949, 0.9999104217035191),
+ (2, 'uniform'): (0.5094953477697477, 0.691850962654824),
+ (3, 'distance'): (0.7130427185747451, 0.9999104221129226),
+ (3, 'uniform'): (0.71212138719142, 0.8444282441447173),
+ (4, 'distance'): (0.7142199091120633, 0.9999104217035191),
+ (4, 'uniform'): (0.6071356249696028, 0.7106687721631715),
+ (5, 'distance'): (0.720004133205145, 0.9999232192463647),
+ (5, 'uniform'): (0.7233312814688141, 0.806133549010353),
+ (6, 'distance'): (0.7262746672024767, 0.9999232180181543),
+ (6, 'uniform'): (0.6598845519165119, 0.7253596066449892),
+ (7, 'distance'): (0.7323658849439487, 0.9999104221129226),
+ (7, 'uniform'): (0.7339527638844333, 0.7884290467147017),
+ (8, 'distance'): (0.7344900216010734, 0.9999104217035191),
+ (8, 'uniform'): (0.6890610140664893, 0.7358018466605818),
+ (9, 'distance'): (0.7368447858650933, 0.9999232188369612),
+ (9, 'uniform'): (0.7413239062194747, 0.7786906345046021)}
 
 
-Best hps {'n_neighbors': 1}
-Mean Squared Error: 0.3022827310881359
-Accuracy on training set: 0.9998720311220312
-Accuracy on test set: 0.697717268911864
+Best hps {'n_neighbors': 9, 'weights': 'distance'}
+Mean Squared Error: 0.2564233800798444
+Accuracy on training set: 0.9998976248976249
+Accuracy on test set: 0.7435766199201556
 -----------------------------
 
 
 
-Mean squared errors [37.25690890481064, 34.74923234390993, 31.960081883316278, 31.206278792015013, 30.761356365962893, 30.228273108813593]
+Mean squared errors [30.296827021494373, 29.324462640736947, 27.763561924257935, 27.367343456747996, 26.999360204734487, 25.64233800798444]
