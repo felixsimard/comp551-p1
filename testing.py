@@ -138,7 +138,7 @@ def test(model_cls, hyperparams_grid: Dict[str, list], ohe_df, target_columns):
             dot_data = StringIO()
             export_graphviz(clf, out_file=dot_data,  
                             filled=True, rounded=True,
-                            special_characters=True,feature_names = X_df.columns)
+                            special_characters=True,feature_names = ohe_df.columns)
             graph = pydotplus.graph_from_dot_data(dot_data.getvalue())  
             graph.write_png('dt_'+random.randint(1, 1000)+'.png')
             Image(graph.create_png())

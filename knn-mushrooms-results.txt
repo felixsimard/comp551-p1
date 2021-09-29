@@ -1,0 +1,192 @@
+/usr/local/lib/python3.7/dist-packages/sklearn/externals/six.py:31: FutureWarning: The module is deprecated in version 0.21 and will be removed in version 0.23 since we've dropped support for Python 2.7. Please rely on the official version of six (https://pypi.org/project/six/).
+  "(https://pypi.org/project/six/).", FutureWarning)
+Using 10.0 % of total dataset.
+
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+
+
+{(1, 'distance'): (0.9985074626865671, 1.0),
+ (1, 'uniform'): (1.0, 1.0),
+ (2, 'distance'): (0.9955334438916529, 1.0),
+ (2, 'uniform'): (0.9925704809286898, 0.9992565055762082),
+ (3, 'distance'): (0.9955444997236041, 1.0),
+ (3, 'uniform'): (0.9970149253731343, 1.0),
+ (4, 'distance'): (0.9970370370370369, 1.0),
+ (4, 'uniform'): (0.9895854063018243, 0.9948017463152887),
+ (5, 'distance'): (0.9895743504698729, 1.0),
+ (5, 'uniform'): (0.9955334438916529, 0.9985137008503976)}
+
+
+Best hps {'n_neighbors': 1, 'weights': 'uniform'}
+Mean Squared Error: 0.0
+Accuracy on training set: 1.0
+Accuracy on test set: 1.0
+-----------------------------
+Using 20.0 % of total dataset.
+
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+
+
+{(1, 'distance'): (0.9992565055762082, 1.0),
+ (1, 'uniform'): (0.9992565055762082, 1.0),
+ (2, 'distance'): (0.9992565055762082, 1.0),
+ (2, 'uniform'): (0.9985157648354676, 0.9992571959145774),
+ (3, 'distance'): (0.9992565055762082, 1.0),
+ (3, 'uniform'): (0.9992565055762082, 0.9998142989786445),
+ (4, 'distance'): (0.9992592592592594, 1.0),
+ (4, 'uniform'): (0.9985130111524164, 0.9990713223086296),
+ (5, 'distance'): (0.9985157648354676, 1.0),
+ (5, 'uniform'): (0.9977722704116756, 0.9992568507453928)}
+
+
+Best hps {'n_neighbors': 4, 'weights': 'distance'}
+Mean Squared Error: 0.0
+Accuracy on training set: 1.0
+Accuracy on test set: 1.0
+-----------------------------
+Using 40.0 % of total dataset.
+
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+
+
+{(1, 'distance'): (1.0, 1.0),
+ (1, 'uniform'): (1.0, 1.0),
+ (2, 'distance'): (1.0, 1.0),
+ (2, 'uniform'): (1.0, 0.9999071494893222),
+ (3, 'distance'): (0.9996282527881041, 1.0),
+ (3, 'uniform'): (1.0, 1.0),
+ (4, 'distance'): (1.0, 1.0),
+ (4, 'uniform'): (0.9985143905483789, 0.9997214053418585),
+ (5, 'distance'): (1.0, 1.0),
+ (5, 'uniform'): (0.9981419536385017, 0.9997214053418585)}
+
+
+Best hps {'n_neighbors': 1, 'weights': 'uniform'}
+Mean Squared Error: 0.0
+Accuracy on training set: 1.0
+Accuracy on test set: 1.0
+-----------------------------
+Using 60.0 % of total dataset.
+
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+
+
+{(1, 'distance'): (1.0, 1.0),
+ (1, 'uniform'): (1.0, 1.0),
+ (2, 'distance'): (1.0, 1.0),
+ (2, 'uniform'): (0.9995049504950495, 0.999938099659548),
+ (3, 'distance'): (1.0, 1.0),
+ (3, 'uniform'): (0.9995049504950495, 0.999938099659548),
+ (4, 'distance'): (1.0, 1.0),
+ (4, 'uniform'): (0.999009287545855, 0.9996905174500738),
+ (5, 'distance'): (0.9997524752475246, 1.0),
+ (5, 'uniform'): (0.9990099009900991, 0.9998761993190962)}
+
+
+Best hps {'n_neighbors': 1, 'weights': 'uniform'}
+Mean Squared Error: 0.0
+Accuracy on training set: 1.0
+Accuracy on test set: 1.0
+-----------------------------
+Using 80.0 % of total dataset.
+
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+
+
+{(1, 'distance'): (1.0, 1.0),
+ (1, 'uniform'): (1.0, 1.0),
+ (2, 'distance'): (1.0, 1.0),
+ (2, 'uniform'): (1.0, 1.0),
+ (3, 'distance'): (1.0, 1.0),
+ (3, 'uniform'): (1.0, 1.0),
+ (4, 'distance'): (1.0, 1.0),
+ (4, 'uniform'): (1.0, 1.0),
+ (5, 'distance'): (1.0, 1.0),
+ (5, 'uniform'): (1.0, 1.0)}
+
+
+Best hps {'n_neighbors': 1, 'weights': 'uniform'}
+Mean Squared Error: 0.0
+Accuracy on training set: 1.0
+Accuracy on test set: 1.0
+-----------------------------
+Using 100.0 % of total dataset.
+
+------- current hp = {'n_neighbors': 1, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 1, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 2, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 3, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 4, 'weights': 'distance'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'uniform'} -------
+------- current hp = {'n_neighbors': 5, 'weights': 'distance'} -------
+
+
+{(1, 'distance'): (1.0, 1.0),
+ (1, 'uniform'): (1.0, 1.0),
+ (2, 'distance'): (1.0, 1.0),
+ (2, 'uniform'): (1.0, 1.0),
+ (3, 'distance'): (1.0, 1.0),
+ (3, 'uniform'): (1.0, 1.0),
+ (4, 'distance'): (1.0, 1.0),
+ (4, 'uniform'): (1.0, 1.0),
+ (5, 'distance'): (1.0, 1.0),
+ (5, 'uniform'): (1.0, 1.0)}
+
+
+Best hps {'n_neighbors': 1, 'weights': 'uniform'}
+Mean Squared Error: 0.0
+Accuracy on training set: 1.0
+Accuracy on test set: 1.0
+-----------------------------
+
+
+
+Mean squared errors [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
