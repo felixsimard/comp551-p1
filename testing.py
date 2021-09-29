@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 from train_test_split import train_valid_split_CV
 import pprint
 from sklearn.tree import export_graphviz
-#from sklearn.externals.six import StringIO 
-from six import StringIO
+from sklearn.externals.six import StringIO 
+#from six import StringIO
 from IPython.display import Image  
 import pydotplus
 import random
